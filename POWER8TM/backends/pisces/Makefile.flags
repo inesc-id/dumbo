@@ -1,0 +1,7 @@
+CFLAGS   += -w -mhtm -DSTM -I$(STM)/ -I../lib
+CFLAGS   += $(HTM_RETRIES) $(RETRY_POLICY) $(BATCH_RATIO)
+CPPFLAGS := $(CFLAGS)
+LDFLAGS  += -L$(STM) -I$(STM)/ -I../lib
+LIBS     += $(CPPFLAGS) -lpisces -lm -ltcmalloc -lrt -lpthread -mcpu=power9 -mtune=power9 -fpermissive -lboost_system
+
+

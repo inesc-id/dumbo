@@ -1,0 +1,5 @@
+CFLAGS   += -w $(HTM_RETRIES) $(RETRY_POLICY) $(BATCH_RATIO)
+
+CPPFLAGS := $(CFLAGS)
+LIBS     += $(CFLAGS) -I ../../../stms/tinystm/src -lrt -mcpu=power9 -mtune=power9 -lm -L../../../stms/tinystm/lib -lpthread -lm -lstm
+LDFLAGS  += $(LIBS)

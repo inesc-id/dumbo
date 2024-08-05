@@ -1,0 +1,2 @@
+Quiescence phase outside suspend/resume, log flush happens in the quiescence phase.
+It also emulates the cost of adding the linking in the log.

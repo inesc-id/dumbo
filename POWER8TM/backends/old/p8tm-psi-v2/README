@@ -1,0 +1,9 @@
+Log flush and Log replayer. Now using physical clocks:
+Line 267, a physical clock is read into temp and then stored in the state
+# define UPDATE_TS_STATE(state){\
+  long temp;\
+  READ_TIMESTAMP(temp);\
+  temp=temp & first_2bits_zero;\
+  temp = (state<<62)|temp;\
+  ts_state[local_thread_id].value=temp;\
+}\

@@ -1,0 +1,3 @@
+Quiescence phase outside suspend/resume, log flush happens in the quiescence phase.
+The flush cost is "hidden" in the wait phase (saves clocks cicles).
+Also the logical clock is taken within the transaction

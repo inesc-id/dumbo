@@ -1,0 +1,25 @@
+.DS_Store
+.vscode/
+plots_scripts/data
+tests_py/data*
+tests_py/__pycache__
+tests_py/*.pdf
+POWER8TM/benchmarks/tpcc/*.zip
+POWER8TM/replayer/plot/*.pdf
+POWER8TM/replayer/plot/replayer
+POWER8TM/replayer/plot/replayer_*
+POWER8TM/replayer/plot/__pycache__
+
+# use generate or fetch from somewhere else
+power8tm-pisces/benchmarks/stamp/kmeans/inputs/random-n65536-d32-c16.txt
+power8tm-pisces/benchmarks/stamp/kmeans/inputs/random-n16384-d24-c16.txt
+power8tm-pisces/benchmarks/stamp/kmeans/inputs/random-n2048-d16-c16.txt
+power8tm-pisces/benchmarks/stamp/kmeans/inputs/random50000_12
+power8tm-pisces/benchmarks/stamp/kmeans/inputs/random1000_12
+power8tm-pisces/benchmarks/stamp/kmeans/inputs/edge
+power8tm-pisces/benchmarks/stamp/kmeans/inputs/color
+
+power8tm-pisces/benchmarks/stamp/labyrinth/inputs/*.txt
+
+power8tm-pisces/benchmarks/stamp/yada/inputs/ttimeu*
+

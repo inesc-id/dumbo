@@ -1,0 +1,1 @@
+Quiescence phase is outside the suspend/resume and the flush of the logs is after the HTM_commit as well.

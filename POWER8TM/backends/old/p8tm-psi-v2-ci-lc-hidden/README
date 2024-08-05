@@ -1,0 +1,1 @@
+The quiescence phase is inside the suspend/resume. Flush of logs happen within the quiescence phase.

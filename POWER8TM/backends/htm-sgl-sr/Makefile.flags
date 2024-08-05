@@ -1,0 +1,5 @@
+CFLAGS   += -w $(HTM_RETRIES) $(RETRY_POLICY) $(BATCH_RATIO)
+
+CPPFLAGS := $(CFLAGS)
+LIBS     += $(CPPFLAGS) -I -lrt -lpthread -mcpu=power9 -mtune=power9 -lm
+LDFLAGS  += $(LIBS)

@@ -1,0 +1,1 @@
+Quiescence phase outside suspend/resume, log flush happens in the quiescence phase.

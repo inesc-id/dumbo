@@ -1,0 +1,5 @@
+CFLAGS   += -w $(HTM_RETRIES) $(ROT_RETRIES) $(BATCH_RATIO) #-DDETAILED_BREAKDOWN_PROFILING
+
+CPPFLAGS := $(CFLAGS)
+LIBS     += $(CPPFLAGS) -lrt -lpthread -mcpu=power9 -mtune=power9 -lm
+LDFLAGS  += $(LIBS)

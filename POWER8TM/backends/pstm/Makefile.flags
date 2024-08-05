@@ -1,0 +1,15 @@
+CFLAGS   += -w -DDEF_CPU_FREQ=$(DEF_CPU_FREQ) -I . \
+  -I ../../../nvhtm/include \
+  -I ../../../deps/htm_alg/include \
+  -I ../../../deps/input_handler/include \
+  -I ../../../deps/arch_dep/include \
+  -I ../../../deps/threading/include \
+  -I ../../../deps/tinystm/include
+
+CPPFLAGS := $(CFLAGS)
+LIBS     +=  -lstm -lrt -mcpu=power9 -mtune=power9 -lm # -ltcmalloc  -lnvhtm -lhtm_sgl -linput_handler -lthreading
+LDFLAGS  += $(CFLAGS) -L ../lib -L . -L ../../../deps/htm_alg \
+  -L ../../../deps/threading  \
+  -L ../../../deps/input_handler \
+  -L ../../../nvhtm \
+  -L ../../../deps/tinystm/lib
