@@ -2,28 +2,19 @@
 
 **Backends:**
 
-* p8tm-si: POWER8-TM for Snapshot Isolation
-
-* p8tm: POWER8-TM with time efficient read-set tracking
-
-* p8tm-se: POWER8-TM with space efficient read-set tracking
-
-* p8tm-sepp: POWER8-TM with aggressive space efficient read-set tracking
-
-* p8tm-ucb: POWER8-TM with time efficient read-set tracking and self-tuning module enabled
-
-* herwl: Hardware Read-Write Lock Elision
-
+* psi: DUMBO-SI
+* psi-strong: DUMBO-opa
 * htm-sgl: Power8 HTM used with a single global lock fallback
+* si-htm: SI-HTM
+* spht: SPHT
 
-* norec: NoReC STM
-
-* hybrid-norec: Hybird NoRec 
+Notes: 
+* besides the main backends listed above, other backends are also available in this repo.
+* The pisces backend (Pisces STM) is available in from the power8tm-pisces folder.
 
 **Benchmarks:**
 
 * Concurrent data-structures (hashmap)
-* STAMP suite
 * TPCC on in-memory database
 
 
@@ -39,6 +30,6 @@ These scripts expect three parameters (in this order):
    persistent abort, which may be omitted (possible values: 0, do not retry in htm and resort to the fallback path; 1, decrease by
    one; 2, divide by two; default value 1)
 
-Hence, a common usage shall be: "bash build-datastructures.sh p8tm 10 5"
+Hence, a common usage shall be: "bash build-datastructures.sh psi 10 5"
 
 
